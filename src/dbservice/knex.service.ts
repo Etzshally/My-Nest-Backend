@@ -1,6 +1,6 @@
 import * as Knex from 'knex';
 
-const knexConfig = require('../knexfile');
+const knexConfig = require('../../knexfile');
 
 export const databaseProvider = {
   provide: 'KnexConnection',
