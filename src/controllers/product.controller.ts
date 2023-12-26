@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Res, Param, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Res, Param, Post, ValidationPipe } from '@nestjs/common';
 import { ProductService } from '../services/product.service';
 import { ProductDTO } from 'src/DTO/Product';
 import { Response } from 'express';
@@ -20,7 +20,7 @@ export class ProductController {
 
   @Post('/create')
   @HttpCode(HttpStatus.CREATED)
-  createProduct(@Body() productData: ProductDTO) {
+  createProduct(@Body(ValidationPipe) productData: ProductDTO) {
     return this.productService.createProduct(productData);
   }
 
