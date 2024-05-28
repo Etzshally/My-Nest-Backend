@@ -1,36 +1,36 @@
-type params = {
-    timeinMilli: number;
-    name: string;
-    isPro: boolean;
-    anyPromise: () => Promise<any>;
-}
+// type params = {
+//     timeinMilli: number;
+//     name: string;
+//     isPro: boolean;
+//     anyPromise: () => Promise<any>;
+// }
 
-const demofunction = ({ timeinMilli, name, isPro, anyPromise }: params): Promise<string> => {
-    return new Promise((resolve, reject) => {
-        console.log("running....")
-        setTimeout(() => {
-            anyPromise()
-                .then(() => {
-                    resolve(name);
-                })
-                .catch((error) => {
-                    reject(error);
-                });
-        }, timeinMilli);
-    });
-};
+// const demofunction = ({ timeinMilli, name, isPro, anyPromise }: params): Promise<string> => {
+//     return new Promise((resolve, reject) => {
+//         console.log("running....")
+//         setTimeout(() => {
+//             anyPromise()
+//                 .then(() => {
+//                     resolve(name);
+//                 })
+//                 .catch((error) => {
+//                     reject(error);
+//                 });
+//         }, timeinMilli);
+//     });
+// };
 
-// Example usage:
-const exampleParams: params = {
-    timeinMilli: 8000,
-    name: "Alice",
-    isPro: true,
-    anyPromise: () => Promise.resolve("Success"),
-};
+// // Example usage:
+// const exampleParams: params = {
+//     timeinMilli: 8000,
+//     name: "Alice",
+//     isPro: true,
+//     anyPromise: () => Promise.resolve("Success"),
+// };
 
-demofunction(exampleParams)
-    .then(result => console.log(result))
-    .catch(error => console.error(error));
+// demofunction(exampleParams)
+//     .then(result => console.log(result))
+//     .catch(error => console.error(error));
 
 // enum MonsterType {
 //     godZilla,
@@ -61,3 +61,12 @@ demofunction(exampleParams)
 // }
 
 // displayMonster(HybridOne)
+
+// const num: number = 5;
+
+// const checkEven = (anyNumber: number): boolean => {
+//     return anyNumber % 2 === 0 ? true : false
+// }
+
+// const flag: boolean = checkEven(num)
+// console.log(flag)
