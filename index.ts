@@ -70,3 +70,7 @@
 
 // const flag: boolean = checkEven(num)
 // console.log(flag)
+
+// const names: string[] = ["charlie", "david", "ali", "max"]
+// const res: boolean = names.some(name => name.length > 6)
+// console.log(res)
