@@ -83,3 +83,61 @@
 // a = a-b
 
 // console.log(a,b)
+
+// let data = [
+//     [
+//         {
+//             vuln: 'xss'
+//         },
+//         {
+//             vuln: 'sqli'
+//         },
+//         {
+//             vuln: 'cors'
+//         },
+//         {
+//             vuln: 'xmli'
+//         },
+//         {
+//             vuln: 'request-smuggling'
+//         }
+//     ],
+//     [
+//         {
+//             vuln: 'cors'
+//         },
+//         {
+//             vuln: 'xmli'
+//         },
+//         {
+//             vuln: 'request-smuggling'
+//         }
+//     ],
+//     [
+//         {
+//             vuln: 'xss'
+//         },
+//         {
+//             vuln: 'xmli'
+//         },
+//         {
+//             vuln: 'request-smuggling'
+//         }
+//     ]
+// ]
+
+// let count = {
+//     "xss": 0,
+//     "request-smuggling": 0,
+//     "xmli": 0,
+//     "cors": 0,
+//     "sqli": 0
+// }
+
+// data.map((row) => {
+//     row.map((item) => {
+//         count[item.vuln]++
+//     })
+// })
+
+// console.log(count)
