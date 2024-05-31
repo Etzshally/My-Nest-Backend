@@ -74,3 +74,12 @@
 // const names: string[] = ["charlie", "david", "ali", "max"]
 // const res: boolean = names.some(name => name.length > 6)
 // console.log(res)
+
+// let a:number = 99
+// let b:number = 1
+
+// a = a+b
+// b = a-b
+// a = a-b
+
+// console.log(a,b)
